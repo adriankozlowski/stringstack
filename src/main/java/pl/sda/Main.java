@@ -6,10 +6,12 @@ public class Main {
         MyStack myStack = new MyStack();
         int i =0;
         while(i < input.length()-1){
-            if(input.charAt(i++) == '+'){
+            if(input.charAt(i) == '+'){
+                i++;
                 char c = input.charAt(i++);
                 myStack.push(c);
-            } else if( input.charAt(i++) == '-') {
+            } else if( input.charAt(i) == '-') {
+                i++;
                 myStack.pop();
             }
         }

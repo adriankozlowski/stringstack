@@ -5,14 +5,28 @@ public class MyStack {
     private int index = -1;
 
     public void push(char c){
-
+        index++;
+        if(index <=9 || index>=0){
+            stack[index] = c;
+        }else {
+            System.out.println(":(");
+        }
     }
 
     public char pop(){
-        return 'c';
+        char peek = peek();
+        if(index >= 0)
+            index--;
+        return peek;
     }
 
     public char peek(){
-        return 'c';
+        if(index <=9 && index>=0){
+            System.out.println(":)");
+            return stack[index];
+        }else {
+            System.out.println(":(");
+            return '?';
+        }
     }
 }
