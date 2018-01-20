@@ -5,7 +5,7 @@ public class Main {
         String input = "+3+5+6--+5+6+9+4---+5+6+3----------";
         MyStack myStack = new MyStack();
         int i =0;
-        while(i < input.length()){
+        while(i < input.length()-1){
             if(input.charAt(i++) == '+'){
                 char c = input.charAt(i++);
                 myStack.push(c);
