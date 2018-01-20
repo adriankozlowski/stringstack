@@ -6,7 +6,7 @@ public class MyStack {
 
     public void push(char c){
         index++;
-        if(index <=9 || index>=0){
+        if(index <=9 && index>=0){
             stack[index] = c;
         }else {
             System.out.println(":(");
